@@ -1,0 +1,160 @@
+╔════════════════════════════════════════════════════════════════╗
+║     📊 BLOG TÉCNICO DE GRAFOS - GUÍA DE EJECUCIÓN             ║
+╚════════════════════════════════════════════════════════════════╝
+
+🎯 OBJETIVO: Visualizar el blog sobre Estructura de Datos - Grafos
+
+📁 ARCHIVOS INCLUIDOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+blog/
+  ├── index.html          ← Página principal del blog
+  ├── styles.css          ← Estilos y diseño
+  └── script.js           ← Interactividad y visualizaciones
+
+run_server.py             ← Script para iniciar servidor
+README.md                 ← Documentación completa
+
+
+🚀 FORMAS DE EJECUTAR EL BLOG:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OPCIÓN 1: Abrir directamente (Recomendado para inicio rápido)
+────────────────────────────────────────────────────────────────
+1. Ve a la carpeta: blog/
+2. Haz doble clic en: index.html
+3. Se abrirá automáticamente en tu navegador
+
+✓ VENTAJA: No requiere configuración
+✗ DESVENTAJA: Algunas visualizaciones pueden no funcionar perfectamente
+
+
+OPCIÓN 2: Usar servidor Python local (Recomendado)
+────────────────────────────────────────────────────────────────
+1. Abre PowerShell en esta carpeta
+2. Ejecuta:
+   
+   cd blog
+   python3 -m http.server 8000
+   
+   O:
+   
+   python -m http.server 8000
+
+3. Abre tu navegador en: http://localhost:8000
+
+✓ VENTAJA: Funcionalidad completa, todos los gráficos funcionan
+✓ VENTAJA: Compatible con todos los navegadores
+
+
+OPCIÓN 3: Usar el script run_server.py
+────────────────────────────────────────────────────────────────
+1. Abre PowerShell en esta carpeta
+2. Ejecuta:
+   
+   python run_server.py
+
+3. Sigue las instrucciones que aparecen en consola
+4. Abre: http://localhost:8000
+
+✓ VENTAJA: Interfaz más clara y amigable
+
+
+OPCIÓN 4: Usar VS Code Live Server (Si tienes la extensión)
+────────────────────────────────────────────────────────────────
+1. Instala la extensión "Live Server" de Ritwick Dey
+2. Click derecho en: blog/index.html
+3. Selecciona: "Open with Live Server"
+4. Se abrirá automáticamente
+
+✓ VENTAJA: Recarga automática al guardar cambios
+
+
+📋 CONTENIDO DEL BLOG:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Post #1: Introducción a los Grafos
+   • Definición y conceptos clave
+   • Tipos de grafos (Dirigidos, No Dirigidos, Ponderados)
+   • Diagrama interactivo con 5 nodos
+
+✅ Post #2: Representación de Grafos
+   • Lista de Adyacencia (eficiencia de espacio)
+   • Matriz de Adyacencia (eficiencia de tiempo)
+   • Tabla comparativa
+   • Ejemplos visuales
+
+✅ Post #3: Algoritmos Fundamentales
+   • BFS (Búsqueda en Amplitud)
+   • DFS (Búsqueda en Profundidad)
+   • Visualizaciones interactivas con animación
+   • Botones para ejecutar paso a paso
+
+
+🎨 CARACTERÍSTICAS DEL BLOG:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ Diseño moderno y responsivo
+✨ Navegación intuitiva y sticky
+✨ Visualizaciones interactivas con SVG
+✨ Animaciones suaves
+✨ Tablas comparativas
+✨ Código formateado con highlight
+✨ Compatible con móvil, tablet y desktop
+
+
+🛠️ TECNOLOGÍAS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HTML5        - Estructura semántica
+CSS3         - Diseño responsivo y moderno
+JavaScript   - Visualizaciones e interactividad
+
+
+🌐 NAVEGADORES SOPORTADOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Google Chrome 90+
+✓ Firefox 88+
+✓ Microsoft Edge 90+
+✓ Safari 14+
+
+
+❓ SOLUCIÓN DE PROBLEMAS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ Python no encontrado:
+   • Instala Python desde: https://python.org
+   • Asegúrate de agregar Python al PATH
+   • Reinicia PowerShell después de instalar
+
+❌ Puerto 8000 en uso:
+   • Cambia en el script a otro puerto (ej: 8001)
+   • O detén el proceso que usa el puerto
+
+❌ Los gráficos no aparecen:
+   • Abre con un servidor (no directamente)
+   • Recarga la página (Ctrl+R)
+   • Abre la consola del navegador (F12) para ver errores
+
+❌ Links de navegación no funcionan:
+   • Abre con un servidor local
+   • Asegúrate de tener JavaScript habilitado
+
+
+📞 PRÓXIMOS PASOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Ejecuta el blog usando una de las opciones arriba
+2. Navega por los tres artículos
+3. Interactúa con los botones de BFS y DFS
+4. Estudia el contenido técnico
+5. (Opcional) Personaliza los colores en styles.css
+6. (Opcional) Agrega más posts al index.html
+
+
+═════════════════════════════════════════════════════════════════
+
+¡Disfruta aprendiendo sobre Grafos! 📊✨
+
+═════════════════════════════════════════════════════════════════

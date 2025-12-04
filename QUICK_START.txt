@@ -1,0 +1,145 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                   🚀 QUICK START GUIDE 🚀                     ║
+║         Blog Técnico: Estructura de Datos - Grafos            ║
+╚═══════════════════════════════════════════════════════════════╝
+
+
+⏱️  30 SEGUNDOS PARA EMPEZAR
+═══════════════════════════════════════════════════════════════
+
+Windows:
+  1. Haz DOBLE CLIC en:  INICIAR_BLOG.bat
+  2. Espera 2 segundos
+  3. Tu navegador se abrirá automáticamente
+  4. ¡Disfruta el blog! 🎉
+
+MacOS/Linux:
+  1. Abre terminal
+  2. cd blog
+  3. python3 -m http.server 8000
+  4. Abre: http://localhost:8000
+
+
+⏱️  1 MINUTO PARA EXPLORAR
+═══════════════════════════════════════════════════════════════
+
+1. [10 seg] Lee: "Introducción a los Grafos" (Post #1)
+2. [20 seg] Mira el diagrama interactivo
+3. [20 seg] Explora: "Representación de Grafos" (Post #2)
+4. [10 seg] Compara las representaciones
+
+
+⏱️  5 MINUTOS PARA APRENDER
+═══════════════════════════════════════════════════════════════
+
+1. [2 min] Lee Post #1: Introducción
+2. [2 min] Lee Post #2: Representación
+3. [1 min] Haz scroll hasta los botones de BFS
+
+
+⏱️  10 MINUTOS PARA PRACTICAR
+═══════════════════════════════════════════════════════════════
+
+1. [2 min] Lee Post #1
+2. [2 min] Lee Post #2
+3. [2 min] Lee Post #3 (Algoritmos)
+4. [2 min] Haz clic en "Ejecutar BFS" y observa
+5. [2 min] Haz clic en "Ejecutar DFS" y compara
+
+
+📖 LOS 3 POSTS EN UNA FRASE
+═══════════════════════════════════════════════════════════════
+
+Post #1: Un grafo es una estructura con nodos conectados por aristas
+Post #2: Los grafos se representan con listas o matrices
+Post #3: Los grafos se recorren con BFS (por amplitud) o DFS (por profundidad)
+
+
+🎯 OBJETIVO DE CADA BOTÓN
+═══════════════════════════════════════════════════════════════
+
+"Ejecutar BFS":   Ver cómo BFS visita los nodos nivel por nivel
+"Ejecutar DFS":   Ver cómo DFS visita los nodos en profundidad
+"Reiniciar":      Volver a los colores iniciales
+
+
+🎨 QUÉ VAS A VER
+═══════════════════════════════════════════════════════════════
+
+✓ Nodos: Círculos numerados o con letras
+✓ Aristas: Líneas que conectan los nodos
+✓ Colores: Gris → Azul → Verde (seguimiento de visita)
+✓ Orden: Se muestra al lado el orden de visita
+
+
+💡 3 COSAS IMPORTANTES
+═══════════════════════════════════════════════════════════════
+
+1️⃣  Un GRAFO es como una red social
+   - Nodos = personas
+   - Aristas = amistades
+
+2️⃣  Hay 2 formas de guardar grafos en memoria
+   - Lista: para grafos dispersos (pocos amigos)
+   - Matriz: para grafos densos (muchos amigos)
+
+3️⃣  Hay 2 formas de explorar un grafo
+   - BFS: amplitud (primero vecinos cercanos)
+   - DFS: profundidad (primero el camino más largo)
+
+
+❓ PREGUNTAS FRECUENTES
+═══════════════════════════════════════════════════════════════
+
+P: ¿Necesito instalar algo?
+R: No. Solo Python para el servidor (ya lo tienes)
+
+P: ¿Qué navegador usar?
+R: Chrome, Firefox, Edge o Safari (cualquiera moderno)
+
+P: ¿Se puede abrir sin servidor?
+R: Sí, pero algunas cosas no funcionan bien
+
+P: ¿Puedo cambiar los colores?
+R: Sí, en el archivo: styles.css (variables CSS)
+
+P: ¿Es código real o solo ejemplo?
+R: Es código real y funcional, listo para aprender
+
+
+🔗 ARCHIVOS IMPORTANTES
+═══════════════════════════════════════════════════════════════
+
+blog/index.html      ← El blog (ABRE AQUÍ después de iniciar servidor)
+blog/styles.css      ← Los colores y diseño
+blog/script.js       ← Las animaciones y gráficos
+
+INICIAR_BLOG.bat     ← Inicia el servidor (DOBLE CLIC)
+README.md            ← Documentación completa
+
+
+📱 COMPATIBLE CON
+═══════════════════════════════════════════════════════════════
+
+✓ Desktop/Laptop
+✓ Tablets
+✓ Smartphones
+✓ Cualquier navegador moderno
+
+
+🎓 DESPUÉS DE APRENDER
+═══════════════════════════════════════════════════════════════
+
+Puedes:
+  • Compartir el blog con amigos
+  • Subirlo a GitHub
+  • Personalizarlo con más posts
+  • Agregar más algoritmos
+  • Usarlo para enseñar
+
+
+════════════════════════════════════════════════════════════════
+
+¿Listo? ¡Dale doble clic a INICIAR_BLOG.bat y comienza! 🚀
+
+════════════════════════════════════════════════════════════════

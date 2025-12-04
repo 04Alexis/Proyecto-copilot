@@ -1,0 +1,583 @@
+/* ============================================
+   ESTILOS GLOBALES Y VARIABLES
+   ============================================ */
+
+:root {
+    --primary-color: #eb3925;
+    --secondary-color: #010309;
+    --accent-color: #49f50b;
+    --danger-color: #04f624;
+    --success-color: #10b981;
+    --text-dark: #de2727;
+    --text-light: #08348d;
+    --border-color: #1fd5d2b5;
+    --bg-light: #080707;
+    --bg-white: #fec405eb;
+    --shadow: 0 1px 3px rgba(94, 90, 90, 0.925), 0 1px 2px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   NAVBAR / HEADER
+   ============================================ */
+
+.navbar {
+    background-color: var(--bg-white);
+    border-bottom: 2px solid var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.logo .tagline {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.25rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 4rem 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* ============================================
+   BLOG POST STYLING
+   ============================================ */
+
+main {
+    padding: 3rem 0;
+}
+
+.blog-post {
+    background-color: var(--bg-white);
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 2rem;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+.post-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.post-content {
+    padding: 2rem;
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 1rem;
+}
+
+.post-content h3:first-child {
+    margin-top: 0;
+}
+
+.post-content h4 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.post-content p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.post-content ul,
+.post-content ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.post-content li strong {
+    color: var(--text-dark);
+}
+
+/* ============================================
+   TYPE DEFINITIONS
+   ============================================ */
+
+.type-definition {
+    background-color: var(--bg-light);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+}
+
+.type-definition h4 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* ============================================
+   CODE BLOCKS
+   ============================================ */
+
+.code-block {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 1.5rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 1rem 0;
+    box-shadow: var(--shadow);
+}
+
+.code-block pre {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.code-block code {
+    font-family: 'Courier New', monospace;
+    color: #10b981;
+}
+
+/* ============================================
+   REPRESENTATION BOX
+   ============================================ */
+
+.representation-box {
+    background-color: #f0f9ff;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.representation-box h4 {
+    color: var(--primary-color);
+}
+
+.representation-box ul {
+    margin-left: 2rem;
+}
+
+.representation-box li {
+    margin-bottom: 0.75rem;
+}
+
+/* ============================================
+   DIAGRAMS
+   ============================================ */
+
+.diagram-container {
+    background-color: var(--bg-light);
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+}
+
+.diagram-description {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 0.75rem;
+}
+
+.graph-svg {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: white;
+}
+
+.diagram-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-control {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-control:hover {
+    background-color: var(--secondary-color);
+}
+
+.order-display {
+    background-color: var(--bg-light);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+#bfs-order,
+#dfs-order {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-family: 'Courier New', monospace;
+}
+
+/* ============================================
+   COMPARISON CONTAINER
+   ============================================ */
+
+.comparison-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.comparison-item {
+    background-color: var(--bg-light);
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1.5rem;
+}
+
+.comparison-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ============================================
+   COMPARISON TABLE
+   ============================================ */
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.comparison-table thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.comparison-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.comparison-table td {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-light);
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: var(--bg-light);
+}
+
+.comparison-table tr:hover {
+    background-color: #eff6ff;
+}
+
+/* ============================================
+   ALGORITHM BOX
+   ============================================ */
+
+.algorithm-box {
+    background: linear-gradient(135deg, #f0f9ff 0%, #eff6ff 100%);
+    border-left: 5px solid var(--primary-color);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+}
+
+.algorithm-box h4 {
+    color: var(--primary-color);
+}
+
+.algorithm-box ul {
+    margin-left: 2rem;
+}
+
+.algorithm-box li {
+    margin-bottom: 0.75rem;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background-color: var(--text-dark);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-top: 3px solid var(--primary-color);
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .post-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .post-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .comparison-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .diagram-controls {
+        flex-wrap: wrap;
+    }
+
+    .btn-control {
+        flex: 1;
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .container {
+        padding: 1rem 10px;
+    }
+
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0;
+    }
+
+    .hero {
+        padding: 2rem 10px;
+    }
+
+    .post-content {
+        padding: 1.5rem;
+    }
+
+    .code-block {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .comparison-table {
+        font-size: 0.85rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.blog-post {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Efecto pulse para elementos destacados */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.btn-control:active {
+    animation: pulse 0.3s ease-in-out;
+}
